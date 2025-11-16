@@ -31,8 +31,6 @@ services:
       - redis-data:/data
     networks:
       - stack
-    ports:
-      - "${REDIS_PORT:-6379}:6379"
 
   calcom:
     image: calcom.docker.scarf.sh/calcom/cal.com
